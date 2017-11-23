@@ -16,8 +16,8 @@ var config = {
   module: { // transpile es6 to es5
     loaders: [
       {
-        test: /\.js?/, //look at all js files
-        include: SRC_DIR, // where
+        test: /\.js?/, //regx to look at all js files
+        include: SRC_DIR, // where to look
         loader: "babel-loader", // load babel
         query: { // with our presets
           presets: ["react", "env", "stage-2"]
